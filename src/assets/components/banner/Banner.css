@@ -1,0 +1,71 @@
+header{
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    padding: 20px;
+}
+
+header ul li a{
+    color: white;
+}
+
+.container-banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.video-banner video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.banner-text{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.banner-text h1{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 62px;
+    color: white;
+    user-select: none;
+}
+
+.banner-text ul{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+}
+
+.banner-text ul li a{
+    color: white;
+}
+
+@media screen and (max-width:430px) {
+    .banner-text h1{
+        font-size: 42px;
+    }
+}
